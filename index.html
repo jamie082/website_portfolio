@@ -1,0 +1,70 @@
+<!-- https://www.w3schools.com/howto/howto_website.asp -->
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, intitial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+    <!-- Content will go here -->
+    <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#band" class="#w3-button w3-bar-item">Band</a>
+        <a href="#tour" class="#w3-button w3-bar-item">Tour</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    <section>
+        <img class="mySlides" src="face.jpg" style="width:50%">
+        <img class="mySlides" src="laptop.jpg" style="width:50%">
+        <img class="mySlides" src="ship.jpg" style="width:50%">
+    </section>
+
+    <script>
+    carousel();
+    var myIndex = 0;
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i <x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+    </script>
+
+    <section class="w3-container w3-center" style="max-width:600px">
+        <h2 class="w3-wide">THE BAND</h2>
+        <p class="w3-opacity"><i>We love music</i></p>
+    </section>
+
+    <section class="w3-container w3-content w3-center" style="max-width:600px">
+    <p class="w3-justify">
+        We have created a fictional band website. Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>John</p>
+            <img src="face.jpg" alt="face image:100%">
+        </article>
+        <article class="w3-third">
+            <p>Paul</p>
+            <img src="laptop.jpg" alt="laptop image:100%">
+        </article>
+        <article class="w3-third">
+            <img src="ship.jpg" alt="ship image:100%">
+        </article>
+    </section>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-offical"></i></a>
+        <a p class="w3-medium">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+</body>
+</html>
